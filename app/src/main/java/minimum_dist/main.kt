@@ -4,7 +4,7 @@ import kotlin.math.min
 
 fun main() {
 
-    val numbers = arrayOf(3, 6, 8, 2, 4, 3, 9, 1, 7, 5, 4)
+    val numbers = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 3, 9)
     val hashMap: HashMap<Int, Int> = hashMapOf();
 
     for (i in numbers.indices) {
@@ -19,8 +19,11 @@ fun main() {
 
     }
 
-
-    var minimumDist: Int = -1 // If not empty -> set dist as first key value
+    var minimumDist: Int =
+        if (hashMap.size == 0)
+            -1
+        else
+            numbers.size
 
     hashMap.forEach { (key, value) ->
         if (value < minimumDist)

@@ -1,5 +1,6 @@
 package First_repeating_element
 
+/*
 fun main() {
 
     val input = arrayOf(10,5,4,6,3,5,3,2)
@@ -19,6 +20,21 @@ fun main() {
         }
     }
 
+}
 
+ */
+
+fun main() {
+    val numbers = arrayOf(10,5,4,6,3,5,3,2)
+    val hashMap: HashMap<Int, Int> = hashMapOf()
+
+    for (i in numbers.indices) {
+        if (hashMap.get(numbers[i]) == null) {
+            hashMap[numbers[i]] = 1
+        } else {
+            println(i)
+            break
+        }
+    }
 
 }
