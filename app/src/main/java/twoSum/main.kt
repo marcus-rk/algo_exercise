@@ -1,7 +1,7 @@
 package twoSum
 
 fun main() {
-     val numbers: IntArray = intArrayOf(3, 2, 1, 3)
+    val numbers: IntArray = intArrayOf(3, 2, 1, 3)
 
     val target: Int = 6
 
